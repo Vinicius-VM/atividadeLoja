@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="btn-group" role="group" aria-label="none">
+        <button type="button" onclick="window.location.href='../Main/index.html'" class="btn btn-primary" id="past">HOME</button>
+        <button type="button" onclick="window.location.href='../armasdefogo/page.html'" class="btn btn-primary" id="past">ARMAS DE FOGO</button>
+        <button type="button" onclick="window.location.href='../armasbrancas/index.html'" class="btn btn-primary" id="past">ARMAS BRANCAS</button>
+        <button type="button" onclick="window.location.href='../municoes/index.html'" class="btn btn-primary" id="past">MUNIÇÕES</button>
+        <button type="button" onclick="window.location.href='../pedido/index.html'" class="btn btn-primary" id="past">SOBRE NÓS</button>
+    </div>
+    
+    <div id="home" class="container">
+        <h1>Bem-vindo à nossa loja</h1>
+        <!-- Carrossel de imagens -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/fundosLogos/ad3.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/fundosLogos/ad2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/fundosLogos/blazer.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        
+        <!-- Destaques de produtos -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/AWM-338-white.jpg/640px-AWM-338-white.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AWM sniper rifle</h5>
+                        <p class="card-text"> Uma arma extremamente potente, conseguindo penetrar até cinco blocos de concreto grosso e 
+                        capaz de matar em distâncias longas de 
+                        até 2 km. Em breve para vendas. 
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.bestnetleiloes.com/media/lots/34515/31487_a.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sabre</h5>
+                        <p class="card-text">Sabre à venda: lâmina afiada, design clássico, perfeito para colecionadores e praticantes de esgrima. Adquira o seu hoje e domine a arte da luta com estilo</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_986641-MLB49322245376_032022-O.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Soco Inglês</h5>
+                        <p class="card-text">Soco-inglês: arma compacta para defesa pessoal. Estrutura resistente, aumenta o impacto dos socos. Ideal para autodefesa</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer mt-5 py-3 bg-dark text-white text-center">
+        <div class="container">
+            <span>&copy; 2024 SlackerDev </span>
+        </div>
+    </footer>
+
+    <!-- Importação do Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

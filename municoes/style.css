@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    font-family: "Poppins", sans-serif;
+    background-image: url("../images/fundo_mobile.avif");
+    background-repeat: no-repeat;
+    background-size: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1, h2{
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 900;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.568);
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 10px;
+    border-radius: 20px;
+}
+.wrap-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 6vh;
+}
+
+.btn-group {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3e5063;
+    z-index: 1000;
+}
+.btn-group .btn {
+    background-color: #3e5063;
+    color: #fff;
+    border: none;
+}
+.btn-group .btn + .btn {
+    margin-left: 10px; /* Adicionando espaço entre os botões */
+}
+
+#past:hover{
+    background-color: rgb(218, 164, 0);
+}
+    
+@media (width >= 800px){
+    body{
+        background-image: url("../images/restauranteComputador.jpg");
+    } 
+    .wrap-cards{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .card-img-top{
+        height: 300px;
+        width: auto;
+        transform: scale(1.0);
+    }
+
+}
