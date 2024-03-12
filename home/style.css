@@ -62,6 +62,7 @@ h1 {
 /* Estilo para a seção de destaques */
 .row {
     margin-bottom: 30px;
+    padding-bottom: 4vh;
 }
 
 .card {
