@@ -94,7 +94,11 @@ p{
 @media (width >= 800px){
     body{
         background-image: url("../images/fundosLogos/gunShop.webp");
+        height: 100%;
     } 
+    html{
+        overflow: hidden;
+    }
     .img-style{
         width: 200px;
     }  
