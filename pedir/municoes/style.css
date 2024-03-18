@@ -7,6 +7,7 @@ html,
 body {
   margin: 0;
   height: 100%;
+  background-color: rgba(59, 59, 59, 0.484);
 }
 
 .pai{
@@ -38,6 +39,8 @@ body {
 
 .rel{
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 500px;
     height: 500px;
     overflow: hidden;
@@ -47,7 +50,7 @@ body {
 .im1{
     position: absolute;
     width: auto;
-    height: 500px;
+    height: 100%;
     transition: all 800ms linear;
     transform: scale(1);
 }
@@ -79,18 +82,6 @@ p{
     border-radius: 20px;
 }
 
-.im1{
-    position: absolute;
-    width: auto;
-    height: 500px;
-    transition: all 800ms linear;
-    transform: scale(1);
-}
-.im1:hover{
-    transform: scale(2.0);
-    transition: all 800ms linear;
-}
-
 
 .btn-group {
     position: fixed;
@@ -113,20 +104,95 @@ p{
     background-color: rgb(218, 164, 0);
 }
     
-@media (width >= 800px){
-    .wrap-cards{
+@media (width < 1000px){
+    iframe {
+        max-width: 100%;
+    }
+    html, body {
         width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(59, 59, 59, 0.484);
+    }
+      
+    .pai{
+        padding-top: 1vh;
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4vh;
+        margin-bottom: 4vh;
+        background-color: rgba(59, 59, 59, 0.484);
+    }
+    .esquerda{
+        padding-top: 2vh;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 10px;
+        width: 100%;
     }
-    .card-img-top{
+    .direita{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rel{
+        position: relative;
+        width: 300px;
         height: 300px;
+        overflow: hidden;
+        border: 4px solid rgb(22, 22, 22);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .im1{
+        position: absolute;
         width: auto;
-        transform: scale(1.0);
+        height: 100%;
+        transition: all 800ms linear;
+        transform: scale(1);
+    }
+
+    .im1:hover{
+        transform: scale(1);
+
+    }
+    
+    .btn-group {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #3e5063;
+        z-index: 1000;
+    }
+    .btn-group .btn {
+        background-color: #3e5063;
+        color: #fff;
+        border: none;
+    }
+    .btn-group .btn + .btn {
+        margin-left: 10px;
+    }
+    
+    #past:hover{
+        background-color: rgb(218, 164, 0);
     }
 
 }

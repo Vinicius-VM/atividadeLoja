@@ -2,10 +2,11 @@ function enviar(){
     var mensagem = "Olá, sou seu cliente e resolvi fazer a aquisição da Desert Eagle. Me mande a chave pix para efeturar a compra.";
 
 
-    var custo = 102.00;
+    let dataAtual = new Date();
+    var custo = "São R$ 102.00 ao todo";
 
     var numeroTel = "5541997637207";
-    var linkWhatsapp = "https://wa.me/" + numeroTel + "?text= " + mensagem;
+    var linkWhatsapp = "https://wa.me/" + numeroTel + "?text= " + mensagem + " - " + "Data de solicitação: " + dataAtual + " - "  + custo;
     window.open(linkWhatsapp, "_blank");
 }
 

@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -91,4 +95,28 @@ h1 {
 .footer a:hover {
     text-decoration: none;
     color: #ccc;
+}
+
+.mt-4{
+    padding-bottom: 50px;
+
+}
+
+@media (width < 1000px){
+
+    .carousel-inner{
+        height: 250px;
+        width: auto;
+    }
+    .carousel-item img {
+        max-height: 250px; /* Definindo uma altura máxima para as imagens do carrossel */
+        width: 100%;
+        object-fit: cover;
+    }
+
+    
+
+
+
+
 }
